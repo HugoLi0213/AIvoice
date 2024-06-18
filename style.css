@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#audioSelect {
+    margin-bottom: 10px;
+}
+
+button[disabled] {
+    background-color: #ccc;
+}
