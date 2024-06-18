@@ -1,12 +1,51 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+h1 {
+    color: #333; /* Dark grey title */
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space under the title */
+}
+
+#audioSelect, #audioPlayer {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 10px auto; /* Auto margins for centering */
 }
 
 #audioSelect {
-    margin-bottom: 10px;
+    display: block; /* Block-level element for proper centering */
 }
 
-button[disabled] {
-    background-color: #ccc;
+button {
+    background-color: #007bff; /* Blue background for the play button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Some padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space below the select box */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#audioPlayer {
+    margin-top: 20px; /* Space above the audio player */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #audioSelect, #audioPlayer {
+        width: 90%; /* Increase width for smaller screens */
+    }
 }
